@@ -1,0 +1,57 @@
+<div id="{{ section.id }}" class="page-width">
+<h2>{{ section.settings.title-text-box }}</h2>
+{{ section.settings.content-text-box }}
+</div>
+<style>
+  #{{ section.id }} h2{
+    color: {{ section.settings.head-color }};
+    font-size:{{ section.settings.head-font-size }}px;
+  }
+  #{{ section.id }} p{
+    color: {{ section.settings.content-color }};
+  }
+</style>
+{% schema %}
+  {
+    "name": "Simple text",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title-text-box",
+        "label": "Heading",
+        "default": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "head-color",
+        "label": "Heading Color",
+        "default": "#000000"
+      },
+      {
+        "type": "range",
+        "id": "head-font-size",
+        "min": 12,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size",
+        "default": 18
+      },
+      {
+        "type": "richtext",
+        "id": "content-text-box",
+        "label": "Content",
+        "default": "<p>Here goes your description </p>"
+      },
+      {
+        "type": "color",
+        "id": "content-color",
+        "label": "Content Color",
+        "default": "#000000"
+      }
+    ],
+    "presets": [
+      { "name": "Simple text"}
+    ]
+  }
+{% endschema %}

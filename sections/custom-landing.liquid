@@ -1,0 +1,267 @@
+{% schema %}
+{
+  "name": "Custom Landing",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Right Side Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "The World's Smartest Cat Litter"
+    },
+    {
+      "type": "color",
+      "id": "heading_text_color",
+      "label": "Heading Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "HEALTH MONITORING LITTER THAT WON'T BREAK YOUR BACK OR THE BANK"
+    },
+    {
+      "type": "color",
+      "id": "subheading_text_color",
+      "label": "Subheading Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "reviews_text",
+      "label": "Reviews Text",
+      "default": "Over 6,000 ★★★★★★ Reviews"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "ORDER NOW"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "shipping_text",
+      "label": "Shipping Text",
+      "default": "Free Delivery, Risk Free Guarantee."
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "select",
+      "id": "text_alingment",
+      "label": "Text Alingment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Landing",
+      "category": "Promotional"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .split-banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: {{ section.settings.background_color }};
+    color: {{ section.settings.text_color }};
+    font-family: sans-serif;
+  }
+  
+  .split-banner .content-column {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .split-banner .image-column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .split-banner .image-column img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .split-banner .reviews {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .split-banner .subtitle {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:{{ section.settings.subheading_text_color }};
+  }
+  
+  .split-banner .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color:{{ section.settings.heading_text_color }};
+  }
+  
+  .split-banner .button {
+    display: inline-block;
+    background-color: {{ section.settings.button_color }};
+    color: {{ section.settings.button_text_color }};
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: opacity 0.3s;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .split-banner .button:hover {
+    opacity: 0.9;
+  }
+  .button:after{
+    box-shadow:none;
+  }
+  
+  .split-banner .shipping {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .split-banner .content-column,
+    .split-banner .image-column {
+      width: 50%;
+    }
+    
+    .split-banner .title {
+      font-size: 42px;
+    }
+    
+    .split-banner .subtitle {
+      font-size: 20px;
+    }
+    
+    .split-banner .content-column {
+      text-align: {{ section.settings.text_alingment }};
+      padding: 60px;
+    }
+    
+    
+  }
+  
+  /* Handle image position */
+  {% if section.settings.image_position == 'left' %}
+    .split-banner .image-column {
+      order: 1;
+    }
+    .split-banner .content-column {
+      order: 2;
+    }
+  {% else %}
+    .split-banner .image-column {
+      order: 2;
+    }
+    .split-banner .content-column {
+      order: 1;
+    }
+  {% endif %}
+</style>
+
+<div class="split-banner">
+  <div class="content-column">
+    <div class="reviews">{{ section.settings.reviews_text }}</div>
+    <div class="subtitle">{{ section.settings.subtitle }}</div>
+    <h1 class="title">{{ section.settings.title }}</h1>
+    <a href="{{ section.settings.button_link }}" class="button">{{ section.settings.button_text }}</a>
+    <div class="shipping">{{ section.settings.shipping_text }}</div>
+  </div>
+  
+  <div class="image-column">
+    {% if section.settings.image %}
+      <img src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.title }}">
+    {% else %}
+      <div style="background: #eee; width: 100%; height: 400px; display: flex; align-items: center; justify-content: center;">
+        <span>Image placeholder</span>
+      </div>
+    {% endif %}
+  </div>
+</div>

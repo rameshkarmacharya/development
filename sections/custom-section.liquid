@@ -1,0 +1,85 @@
+{% for block in section.blocks %}
+  {% if block.type == 'paragraph' %}
+    <p>{{ block.settings.text }}</p>
+ 
+  {% endif %}
+{% endfor %}
+
+<h1 style="color: {{ section.settings.color }}">{{ section.settings.text }}</h1>
+
+{% for block in section.blocks %}
+  {% if block.type == 'social' %}
+    <a href="{{ block.settings.url }}">{{ block.settings.text }}</a>
+  {% endif %}
+
+  {% if block.type == 'image' %}
+ {{  block.settings.image | image_url: width: 500 | image_tag }}
+    {% endif %}
+{% endfor %}
+
+
+{% stylesheet %}
+  .custom-section {
+    background: gray;
+    padding: 60px 0;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Custom section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Text color",
+      "default": "#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Social link",
+      "type": "social",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "name": "Paragraph",
+      "type": "paragraph",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

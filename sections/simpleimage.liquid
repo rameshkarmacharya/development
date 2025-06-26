@@ -1,0 +1,21 @@
+<div class="page-width">
+
+  <img src="{{ section.settings.image-picker | img_url: 'original' }}" alt="Image">
+</div>
+{% schema %}
+  {
+    "name": "Simple Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image-picker",
+        "label": "Pick Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Simple Image"
+      }
+    ]
+  }
+{% endschema %}

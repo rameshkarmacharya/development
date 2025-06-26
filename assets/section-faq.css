@@ -1,0 +1,36 @@
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-button {
+  width: 100%;
+  padding: 15px;
+
+  color: #000;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.faq-button:hover {
+
+}
+
+.faq-content {
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  display: none;
+  border-left: 2px solid #007BFF;
+  border-radius: 0 0 4px 4px;
+}
+
+.faq-toggle:checked + .faq-button + .faq-content {
+  display: block;
+}

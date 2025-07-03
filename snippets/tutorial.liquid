@@ -1,4 +1,5 @@
-{% for product in collection.products %}
+{%comment %}
+  {% for product in collection.products %}
     <p style="
   {% if forloop.first %}
     color: green
@@ -17,8 +18,7 @@
 
     {% endfor %}
     </ul>
-
-    
+   
 {% endfor %}
 {% assign myMultilinetext = '
       This is the first line
@@ -30,3 +30,10 @@
       {{ myMultilinetext | newline_to_br }}
       {% assign  myLongString  = "This is some very long text that will e trimed" %}
 {{ myLongString | truncate: 30 | append:"!" | replace:"long", "short" }}
+
+
+{% endcomment %}
+ {% assign myNumber = "1,2,3,4" %}
+ {% for number in myNumber %}
+{{ number }}
+  {% endfor %}

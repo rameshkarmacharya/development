@@ -1,0 +1,21 @@
+{% for product in collection.products %}
+    <p style="
+  {% if forloop.first %}
+    color: green
+      {% elsif forloop.last %}
+    color:red
+      
+    {% endif %}">
+  {{ forloop.index }}-{{ product.title }}</p>
+  {% if product.tags.size > 0 %}
+<h2>Tag</h2>
+{% endif %} 
+  <ul>
+{% for tag in product.tags %}
+ 
+<li>Product.Index: {{ forloop.parentloop.index }}| Tag: {{ tag }}</li>
+
+    {% endfor %}
+    </ul>
+sdfadsf
+{% endfor %}

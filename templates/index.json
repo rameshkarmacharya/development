@@ -82,7 +82,9 @@
         "demo_block_mJ93Lg": {
           "type": "demo_block",
           "name": "Demo Theme Block",
-          "settings": {},
+          "settings": {
+            "demo_text": "This is demo theme block content it can be  edited"
+          },
           "blocks": {}
         }
       },

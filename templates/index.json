@@ -94,11 +94,21 @@
             "demo_text": "This is demo theme block content"
           },
           "blocks": {}
+        },
+        "demo_block_LWPHdA": {
+          "type": "demo_block",
+          "name": "Demo Theme Block",
+          "settings": {
+            "demo_text": "This is demo theme block content",
+            "demo_image": "shopify://shop_images/shoes-2.svg"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "demo_block_mJ93Lg",
-        "demo_block_EUwC8q"
+        "demo_block_EUwC8q",
+        "demo_block_LWPHdA"
       ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {

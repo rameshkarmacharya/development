@@ -86,10 +86,19 @@
             "demo_text": "This is demo theme block content it can be  edited"
           },
           "blocks": {}
+        },
+        "demo_block_EUwC8q": {
+          "type": "demo_block",
+          "name": "Demo Theme Block",
+          "settings": {
+            "demo_text": "This is demo theme block content"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "demo_block_mJ93Lg"
+        "demo_block_mJ93Lg",
+        "demo_block_EUwC8q"
       ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {

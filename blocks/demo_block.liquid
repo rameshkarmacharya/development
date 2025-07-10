@@ -1,5 +1,9 @@
 <div class="">{{ block.settings.demo_text }} </div>
 
+<div class="">
+
+  <img url={{ block.settings.demo_image }}> 
+</div>
 {% schema %}
   {
     "name": "Block name",
@@ -9,6 +13,11 @@
         "id": "demo_text",
         "default": "This is demo theme block content",
         "label": "This is info"
+      },
+      {
+      "type": "image_picker",
+      "id": "demo_image",
+      "label": "Choose Image"
       }
     ],
     "presets": [

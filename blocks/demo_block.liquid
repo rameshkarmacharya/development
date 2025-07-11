@@ -2,7 +2,7 @@
 
 <div class="">
 
-  <img url={{ block.settings.demo_image }}> 
+  <img src="{{ block.settings.demo_image | img_url: 'master' }}"> 
 </div>
 {% schema %}
   {

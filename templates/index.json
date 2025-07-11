@@ -96,10 +96,20 @@
             "column_gap": 0
           },
           "blocks": {}
+        },
+        "text_Lkhg3f": {
+          "type": "text",
+          "name": "Text",
+          "settings": {
+            "text": "<p>test text</p>",
+            "alignment": "left"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "grid_box_normal_YfkF6z"
+        "grid_box_normal_YfkF6z",
+        "text_Lkhg3f"
       ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {

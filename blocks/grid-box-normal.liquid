@@ -2,6 +2,8 @@
 assign class_name = block.settings.class_name
     assign backgroundColor= block.settings.background_color
     assign backgroundImage = block.settings.background_image
+    assign html_width = block.settings.html_width
+    assign mobile_width = block.settings.mobile_html_width
 -%}
 <div class="block-{{ block.id }}">
 {% content_for 'blocks' %}
@@ -9,6 +11,9 @@ assign class_name = block.settings.class_name
 
 {% style %}
   .block-{{ block.id }}{
+    {% if html_width != 100 %}
+      max-width: {{ html_width }};
+  {% endif %}}
 {% if backgroundImage != blank %}
   background-image:url({{ backgroundImage | img_url:"master" }});
     {% endif %}

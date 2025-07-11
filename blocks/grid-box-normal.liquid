@@ -1,6 +1,103 @@
+
 {% schema %}
-  {
-    "name": "Block name",
-    "settings": []
-  }
+{
+  "name": "Grid Box Only",
+  
+ 
+      
+      "settings": [
+        {
+          "type": "text",
+          "label": "Class Name",
+          "id": "class_name"
+        },
+        {
+          "type": "image_picker",
+          "label": "Background Image",
+          "id": "background_image"
+        },
+        {
+          "type": "color_background",
+          "label": "Background Color",
+          "id": "background_color"
+        },
+        {
+          "type": "select",
+          "label": "Background Size",
+          "id": "background_size",
+          "default": "cover",
+          "options": [
+            {
+              "label": "Cover",
+              "value": "cover"
+            },
+            {
+              "label": "Contain",
+              "value": "contain"
+            },
+            {
+              "label": "Auto",
+              "value": "auto"
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "label": "Custom CSS",
+          "id": "custom_css"
+        },
+        {
+          "type": "range",
+          "label": "Number of Columns",
+          "id": "number_of_columns",
+          "default": 1,
+          "min": 1,
+          "max": 12,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "label": "Number of Columns on Mobile",
+          "id": "number_of_columns_on_mobile",
+          "default": 3,
+          "min": 1,
+          "max": 12,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "label": "Gap",
+          "id": "gap",
+          "default": 0,
+          "min": 0,
+          "max": 10,
+          "step": 0.1,
+          "unit": "rem"
+        },
+        {
+          "type": "range",
+          "label": "Column Gap",
+          "id": "column_gap",
+          "default": 0,
+          "min": 0,
+          "max": 10,
+          "step": 0.1,
+          "unit": "rem"
+        }
+      ],
+
+ 
+  "blocks": [{"type": "@theme", "type": "@app"}],
+  "presets": [
+    {
+      "name": "Grid Box normal"
+    }
+  ]
+}
 {% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

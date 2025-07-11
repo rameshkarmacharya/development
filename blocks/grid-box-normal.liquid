@@ -13,7 +13,7 @@ assign class_name = block.settings.class_name
   .block-{{ block.id }}{
     {% if html_width != 100 %}
       max-width: {{ html_width }}%;
-  {% endif %}}
+  {% endif %}
 {% if backgroundImage != blank %}
   background-image:url({{ backgroundImage | img_url:"master" }});
     {% endif %}

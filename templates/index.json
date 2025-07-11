@@ -112,6 +112,8 @@
             "background_image": "shopify://shop_images/Screenshot_2025-04-16_210610.png",
             "background_color": "",
             "background_size": "cover",
+            "html_width": 54,
+            "mobile_html_width": 100,
             "custom_css": "",
             "number_of_columns": 1,
             "number_of_columns_on_mobile": 3,

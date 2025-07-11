@@ -1,7 +1,7 @@
 <div class="text-block text-{{ block.settings.alignment }}">
   {{ block.settings.text }}
 </div>
-
+ {% content_for 'blocks' %}
 {% stylesheet %}
   .text-left {
     text-align: left;
@@ -19,6 +19,7 @@
 {% schema %}
 {
   "name": "Text",
+  "blocks": [{ "type": "@theme" }],
   "settings": [
     {
       "type": "richtext",

@@ -1,3 +1,8 @@
+{%- liquid
+assign class_name = block.settings.class_name
+    assign backgroundColor= block.settings.background_color
+    assign backgroundImage = block.settings.background_image
+-%}
 <div class="block-{{ block.id }}">
 {% content_for 'blocks' %}
 </div>

@@ -1,6 +1,17 @@
+{% content_for 'blocks' %}
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "blocks": [
+      {
+        "type": "@theme"
+      }
+    ],
+    "settings": [],
+    "presets": [
+      {
+        "name": "Theme Blocks Sections"
+      }
+    ]
   }
 {% endschema %}

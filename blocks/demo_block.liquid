@@ -1,31 +1,49 @@
-<div class="">{{ block.settings.demo_text }} </div>
-
-<div class="">
-
-  <img src="{{ block.settings.demo_image | img_url: 'master' }}"> 
+<div
+  class="group-block color-{{ block.settings.color_scheme }}"
+>
+  {% content_for 'blocks' %}
 </div>
-{% content_for 'blocks' %}
+
 {% schema %}
-  {
-    "name": "Block name",
-    "settings": [
-      {
-        "type": "text",
-        "id": "demo_text",
-        "default": "This is demo theme block content",
-        "label": "This is info"
+{
+  "name": "Group",
+  "blocks": [{ "type": "@theme" }, { "type": "@app" }],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Group"
+    },
+    {
+      "name": "Column",
+      "settings": {
+        "color_scheme": "scheme-3"
       },
-      {
-      "type": "image_picker",
-      "id": "demo_image",
-      "label": "Choose Image"
-      }
-    ],
-    "blocks": [{"type": "@theme", "type": "@app"}],
-    "presets": [
-      {
-        "name": "Demo Theme Block"
-      }
-    ]
-  }
+      "blocks": [
+        {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Hello, world!</h3>"
+          }
+        },
+        {
+          "type": "text",
+          "settings": {
+            "text": "<p>How's it going?<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

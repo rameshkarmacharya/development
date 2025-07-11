@@ -104,7 +104,20 @@
             "text": "<p>test text</p>",
             "alignment": "left"
           },
-          "blocks": {}
+          "blocks": {
+            "text_7CUm4k": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "<p>test</p>",
+                "alignment": "left"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_7CUm4k"
+          ]
         }
       },
       "block_order": [

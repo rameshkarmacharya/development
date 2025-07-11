@@ -1,7 +1,7 @@
 <div class="">{{ block.settings.demo_text }} </div>
 
 <div class="">
-
+{% content_for 'blocks' %}
   <img src="{{ block.settings.demo_image | img_url: 'master' }}"> 
 </div>
 {% schema %}

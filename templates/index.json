@@ -103,12 +103,29 @@
             "demo_image": "shopify://shop_images/shoes-2.svg"
           },
           "blocks": {}
+        },
+        "grid_box_normal_YfkF6z": {
+          "type": "grid-box-normal",
+          "name": "Grid Box normal",
+          "settings": {
+            "class_name": "",
+            "background_image": "shopify://shop_images/Screenshot_2025-04-16_210610.png",
+            "background_color": "",
+            "background_size": "cover",
+            "custom_css": "",
+            "number_of_columns": 1,
+            "number_of_columns_on_mobile": 3,
+            "gap": 0,
+            "column_gap": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "demo_block_mJ93Lg",
         "demo_block_EUwC8q",
-        "demo_block_LWPHdA"
+        "demo_block_LWPHdA",
+        "grid_box_normal_YfkF6z"
       ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {

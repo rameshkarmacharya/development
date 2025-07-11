@@ -7,6 +7,13 @@ assign class_name = block.settings.class_name
 {% content_for 'blocks' %}
 </div>
 
+{% style %}
+  .block-{{ block.id }}{
+{% if backgroundImage != blank %}
+  background-image:url({{ backgroundImage | img_url:"master" }});
+    {% endif %}
+  }
+{% endstyle %}
 {% schema %}
 {
   "name": "Grid Box Only",

@@ -3,7 +3,7 @@
     {% elsif block.settings.type_of_cell == "body" %}
   <td>
   {% endif %}
-
+{% content_for 'blocks' %}
 {% if block.settings.type_of_cell == "header" %}
   </th>
     {% elsif block.settings.type_of_cell == "body" %}
@@ -13,6 +13,9 @@
 {% schema %}
   {
     "name": "Table cell",
+    "blocks": [{
+      "type": "@theme"
+    }],
     "settings": [
       {
         "type": "select",

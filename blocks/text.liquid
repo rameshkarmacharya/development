@@ -1,45 +1,22 @@
-<div class="text-block text-{{ block.settings.alignment }}">
+<p>
   {{ block.settings.text }}
-</div>
- {% content_for 'blocks' %}
-{% stylesheet %}
-  .text-left {
-    text-align: left;
-  }
-
-  .text-center {
-    text-align: center;
-  }
-
-  .text-right {
-    text-align: right;
-  }
-{% endstylesheet %}
+</p>
 
 {% schema %}
 {
   "name": "Text",
-  "blocks": [{ "type": "@theme" }],
   "settings": [
     {
-      "type": "richtext",
-      "id": "text",
-      "label": "Text"
-    },
-    {
-      "type": "text_alignment",
-      "id": "alignment",
-      "label": "Alignment"
-    },
+      "type": "text",
+      "label": "Text",
+      "id": "text"
+    }
   ],
   "presets": [
-    { "name": "Text" },
     {
-      "name": "Content",
-      "settings": {
-        "text": "<p>Hello, world!</p>"
-      }
+      "name": "Text"
     }
   ]
 }
+
 {% endschema %}

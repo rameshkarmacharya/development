@@ -132,26 +132,48 @@
                 "type_of_cell": "header"
               },
               "blocks": {
-                "text_EWqwhD": {
-                  "type": "text",
-                  "name": "Text",
-                  "settings": {
-                    "text": "Header 1"
+                "table_row_YhPWak": {
+                  "type": "table-row",
+                  "name": "Table  ",
+                  "settings": {},
+                  "blocks": {
+                    "table_cell_dcdkfz": {
+                      "type": "table-cell",
+                      "name": "Header Cell",
+                      "settings": {
+                        "type_of_cell": "header"
+                      },
+                      "blocks": {
+                        "text_DTNMHq": {
+                          "type": "text",
+                          "name": "Text",
+                          "settings": {
+                            "text": "asda"
+                          },
+                          "blocks": {}
+                        },
+                        "text_VBCpm6": {
+                          "type": "text",
+                          "name": "Text",
+                          "settings": {
+                            "text": "asd"
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_DTNMHq",
+                        "text_VBCpm6"
+                      ]
+                    }
                   },
-                  "blocks": {}
-                },
-                "text_YfJqhJ": {
-                  "type": "text",
-                  "name": "Text",
-                  "settings": {
-                    "text": "Header 2"
-                  },
-                  "blocks": {}
+                  "block_order": [
+                    "table_cell_dcdkfz"
+                  ]
                 }
               },
               "block_order": [
-                "text_EWqwhD",
-                "text_YfJqhJ"
+                "table_row_YhPWak"
               ]
             }
           },

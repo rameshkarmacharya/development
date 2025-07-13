@@ -1,6 +1,42 @@
+
 {% schema %}
-  {
-    "name": "Block name",
-    "settings": []
-  }
+{
+  "name": "Accordion Item",
+  
+  "settings": [
+    {
+      "type": "checkbox",
+      "label": "Always Open",
+      "id": "always_open",
+      "default": false
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@theme"
+    }
+  ],
+  
+  "presets": [
+    {
+      "name": "Accordion Item"
+    }
+  ]
+}
 {% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -125,60 +125,71 @@
           "static": true,
           "settings": {},
           "blocks": {
-            "table_cell_i37bJp": {
+            "table_cell_bjQhFt": {
               "type": "table-cell",
               "name": "Header Cell",
               "settings": {
                 "type_of_cell": "header"
               },
               "blocks": {
-                "table_row_YhPWak": {
-                  "type": "table-row",
-                  "name": "Table  ",
-                  "settings": {},
-                  "blocks": {
-                    "table_cell_dcdkfz": {
-                      "type": "table-cell",
-                      "name": "Header Cell",
-                      "settings": {
-                        "type_of_cell": "header"
-                      },
-                      "blocks": {
-                        "text_DTNMHq": {
-                          "type": "text",
-                          "name": "Text",
-                          "settings": {
-                            "text": "asda"
-                          },
-                          "blocks": {}
-                        },
-                        "text_VBCpm6": {
-                          "type": "text",
-                          "name": "Text",
-                          "settings": {
-                            "text": "asd"
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "text_DTNMHq",
-                        "text_VBCpm6"
-                      ]
-                    }
+                "text_nhyKWe": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "test"
                   },
-                  "block_order": [
-                    "table_cell_dcdkfz"
-                  ]
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "table_row_YhPWak"
+                "text_nhyKWe"
+              ]
+            },
+            "table_cell_BwmqTE": {
+              "type": "table-cell",
+              "name": "Header Cell",
+              "settings": {
+                "type_of_cell": "header"
+              },
+              "blocks": {
+                "text_JxqQKa": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "testtt"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_JxqQKa"
+              ]
+            },
+            "table_cell_BGmEcf": {
+              "type": "table-cell",
+              "name": "Header Cell",
+              "settings": {
+                "type_of_cell": "header"
+              },
+              "blocks": {
+                "text_wL9cDN": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "teststt"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_wL9cDN"
               ]
             }
           },
           "block_order": [
-            "table_cell_i37bJp"
+            "table_cell_bjQhFt",
+            "table_cell_BwmqTE",
+            "table_cell_BGmEcf"
           ]
         }
       },

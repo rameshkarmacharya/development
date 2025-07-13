@@ -120,6 +120,78 @@
     "table_w97GGj": {
       "type": "table",
       "blocks": {
+        "table_row_VrjptJ": {
+          "type": "table-row",
+          "name": "Table Row ",
+          "settings": {},
+          "blocks": {
+            "table_cell_t34RQc": {
+              "type": "table-cell",
+              "name": "Body Cell",
+              "settings": {
+                "type_of_cell": "body"
+              },
+              "blocks": {
+                "text_3Rm7Qt": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "Content 1"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_3Rm7Qt"
+              ]
+            },
+            "table_cell_fATEJz": {
+              "type": "table-cell",
+              "name": "Body Cell",
+              "settings": {
+                "type_of_cell": "body"
+              },
+              "blocks": {
+                "text_wnVeDg": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "Content 2"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_wnVeDg"
+              ]
+            },
+            "table_cell_NyBxXP": {
+              "type": "table-cell",
+              "name": "Body Cell",
+              "settings": {
+                "type_of_cell": "body"
+              },
+              "blocks": {
+                "text_UXiikf": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "Content 3"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_UXiikf"
+              ]
+            }
+          },
+          "block_order": [
+            "table_cell_t34RQc",
+            "table_cell_fATEJz",
+            "table_cell_NyBxXP"
+          ]
+        },
         "table-header": {
           "type": "table-header",
           "static": true,
@@ -193,6 +265,9 @@
           ]
         }
       },
+      "block_order": [
+        "table_row_VrjptJ"
+      ],
       "name": "Table",
       "settings": {}
     }

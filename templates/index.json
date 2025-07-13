@@ -87,7 +87,21 @@
             "heading": "Test FAQ",
             "content": "<p>Answer</p>"
           },
-          "blocks": {}
+          "blocks": {
+            "accordion_item_9ekgqM": {
+              "type": "accordion-item",
+              "name": "Accordion Item",
+              "settings": {
+                "always_open": false,
+                "heading": "FAQ",
+                "content": "<p>tet</p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "accordion_item_9ekgqM"
+          ]
         },
         "grid_box_normal_YfkF6z": {
           "type": "grid-box-normal",

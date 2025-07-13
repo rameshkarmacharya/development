@@ -1,6 +1,48 @@
+{% if block.settings.type_of_cell == "header" %}
+  <th>
+    {% elsif block.settings.type_of_cell == "body" %}
+  <td>
+  {% endif %}
+
+{% if block.settings.type_of_cell == "header" %}
+  </th>
+    {% elsif block.settings.type_of_cell == "body" %}
+  </td>
+  {% endif %}
+
 {% schema %}
   {
-    "name": "Block name",
-    "settings": []
+    "name": "Table cell",
+    "settings": [
+      {
+        "type": "select",
+        "label": "Type of Cell",
+        "options": [
+          {
+            "value": "header",
+            "label": "Header cell"
+          },
+          {
+            "value": "body",
+            "label": "Body Cell"
+          }
+        ],
+        "id": "type_of_cell"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Header Cell",
+        "settings": {
+          "type_of_cell": "header"
+        }
+      },
+      {
+        "name": "Body Cell",
+        "settings": {
+          "type_of_cell": "body"
+        }
+      }
+    ]
   }
 {% endschema %}

@@ -79,6 +79,16 @@
     "custom_liquid_9hMCcC": {
       "type": "custom-liquid",
       "blocks": {
+        "accordion_item_33dayp": {
+          "type": "accordion-item",
+          "name": "Accordion Item",
+          "settings": {
+            "always_open": false,
+            "heading": "Test FAQ",
+            "content": "<p>Answer</p>"
+          },
+          "blocks": {}
+        },
         "grid_box_normal_YfkF6z": {
           "type": "grid-box-normal",
           "name": "Grid Box normal",
@@ -121,6 +131,7 @@
         }
       },
       "block_order": [
+        "accordion_item_33dayp",
         "grid_box_normal_YfkF6z",
         "text_Lkhg3f"
       ],

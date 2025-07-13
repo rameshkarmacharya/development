@@ -109,42 +109,58 @@
             "text": "This is test Blocks"
           },
           "blocks": {}
-        },
-        "table_cell_6HcMbW": {
-          "type": "table-cell",
-          "name": "Header Cell",
-          "settings": {
-            "type_of_cell": "header"
-          },
-          "blocks": {
-            "text_8w8prJ": {
-              "type": "text",
-              "name": "Text",
-              "settings": {
-                "text": "test1"
-              },
-              "blocks": {}
-            },
-            "text_xT7aQC": {
-              "type": "text",
-              "name": "Text",
-              "settings": {
-                "text": "test2"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_8w8prJ",
-            "text_xT7aQC"
-          ]
         }
       },
       "block_order": [
-        "text_bRMbiY",
-        "table_cell_6HcMbW"
+        "text_bRMbiY"
       ],
       "name": "Theme Blocks Sectoin",
+      "settings": {}
+    },
+    "table_w97GGj": {
+      "type": "table",
+      "blocks": {
+        "table-header": {
+          "type": "table-header",
+          "static": true,
+          "settings": {},
+          "blocks": {
+            "table_cell_i37bJp": {
+              "type": "table-cell",
+              "name": "Header Cell",
+              "settings": {
+                "type_of_cell": "header"
+              },
+              "blocks": {
+                "text_EWqwhD": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "Header 1"
+                  },
+                  "blocks": {}
+                },
+                "text_YfJqhJ": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "Header 2"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_EWqwhD",
+                "text_YfJqhJ"
+              ]
+            }
+          },
+          "block_order": [
+            "table_cell_i37bJp"
+          ]
+        }
+      },
+      "name": "Table",
       "settings": {}
     }
   },
@@ -152,6 +168,7 @@
     "image_banner",
     "featured_collection",
     "custom_liquid_9hMCcC",
-    "theme_blocks_yJBgmq"
+    "theme_blocks_yJBgmq",
+    "table_w97GGj"
   ]
 }

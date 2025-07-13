@@ -1,6 +1,21 @@
+<thead>
+  <tr>
+{% content_for 'blocks' %}
+  </tr>
+</thead>
 {% schema %}
   {
-    "name": "Block name",
-    "settings": []
+    "name": "Table  ",
+    "blocks": [
+      {
+        "type": "table-cell"
+      }
+    ],
+    "settings": [],
+    "presets": [
+      {
+        "name": "Table  "
+      }
+    ]
   }
 {% endschema %}

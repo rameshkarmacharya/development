@@ -79,74 +79,16 @@
     "custom_liquid_9hMCcC": {
       "type": "custom-liquid",
       "blocks": {
-        "accordion_item_33dayp": {
-          "type": "accordion-item",
-          "name": "Accordion Item",
-          "settings": {
-            "always_open": false,
-            "heading": "Test FAQ",
-            "content": "<p>Answer</p>"
-          },
-          "blocks": {
-            "accordion_item_9ekgqM": {
-              "type": "accordion-item",
-              "name": "Accordion Item",
-              "settings": {
-                "always_open": false,
-                "heading": "FAQ",
-                "content": "<p>tet</p>"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "accordion_item_9ekgqM"
-          ]
-        },
-        "grid_box_normal_YfkF6z": {
-          "type": "grid-box-normal",
-          "name": "Grid Box normal",
-          "settings": {
-            "class_name": "",
-            "background_image": "shopify://shop_images/Screenshot_2025-04-16_210610.png",
-            "background_color": "",
-            "background_size": "cover",
-            "html_width": 54,
-            "mobile_html_width": 100,
-            "custom_css": "",
-            "number_of_columns": 1,
-            "number_of_columns_on_mobile": 3,
-            "gap": 0,
-            "column_gap": 0
-          },
-          "blocks": {}
-        },
         "text_Lkhg3f": {
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>test text</p>",
-            "alignment": "left"
+            "text": "<p>test text</p>"
           },
-          "blocks": {
-            "text_7CUm4k": {
-              "type": "text",
-              "name": "Text",
-              "settings": {
-                "text": "<p>test</p>",
-                "alignment": "left"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_7CUm4k"
-          ]
+          "blocks": {}
         }
       },
       "block_order": [
-        "accordion_item_33dayp",
-        "grid_box_normal_YfkF6z",
         "text_Lkhg3f"
       ],
       "name": "t:sections.custom-liquid.presets.name",
@@ -156,11 +98,30 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "theme_blocks_yJBgmq": {
+      "type": "theme-blocks",
+      "blocks": {
+        "text_bRMbiY": {
+          "type": "text",
+          "name": "Text",
+          "settings": {
+            "text": "This is test Blocks"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_bRMbiY"
+      ],
+      "name": "Theme Blocks Sectoin",
+      "settings": {}
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "custom_liquid_9hMCcC"
+    "custom_liquid_9hMCcC",
+    "theme_blocks_yJBgmq"
   ]
 }

@@ -109,10 +109,40 @@
             "text": "This is test Blocks"
           },
           "blocks": {}
+        },
+        "table_cell_6HcMbW": {
+          "type": "table-cell",
+          "name": "Header Cell",
+          "settings": {
+            "type_of_cell": "header"
+          },
+          "blocks": {
+            "text_8w8prJ": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "test1"
+              },
+              "blocks": {}
+            },
+            "text_xT7aQC": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "test2"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_8w8prJ",
+            "text_xT7aQC"
+          ]
         }
       },
       "block_order": [
-        "text_bRMbiY"
+        "text_bRMbiY",
+        "table_cell_6HcMbW"
       ],
       "name": "Theme Blocks Sectoin",
       "settings": {}
